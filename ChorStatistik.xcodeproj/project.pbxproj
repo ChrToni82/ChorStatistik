@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AA2C4BF21E128E65001110B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C4BF11E128E65001110B4 /* AppDelegate.swift */; };
-		AA2C4BF51E128E65001110B4 /* ChorStatistik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA2C4BF31E128E65001110B4 /* ChorStatistik.xcdatamodeld */; };
 		AA2C4BF71E128E65001110B4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C4BF61E128E65001110B4 /* MasterViewController.swift */; };
 		AA2C4BF91E128E65001110B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C4BF81E128E65001110B4 /* DetailViewController.swift */; };
 		AA2C4BFC1E128E65001110B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2C4BFA1E128E65001110B4 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		AA2C4C011E128E66001110B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2C4BFF1E128E66001110B4 /* LaunchScreen.storyboard */; };
 		AA2C4C0C1E128E66001110B4 /* ChorStatistikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C4C0B1E128E66001110B4 /* ChorStatistikTests.swift */; };
 		AA2C4C171E128E66001110B4 /* ChorStatistikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C4C161E128E66001110B4 /* ChorStatistikUITests.swift */; };
+		AA2C4C2B1E12A92C001110B4 /* ChorStatistik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA2C4C291E12A92C001110B4 /* ChorStatistik.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		AA2C4BEE1E128E65001110B4 /* ChorStatistik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChorStatistik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2C4BF11E128E65001110B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA2C4BF41E128E65001110B4 /* ChorStatistik.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChorStatistik.xcdatamodel; sourceTree = "<group>"; };
 		AA2C4BF61E128E65001110B4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		AA2C4BF81E128E65001110B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AA2C4BFB1E128E65001110B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		AA2C4C121E128E66001110B4 /* ChorStatistikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChorStatistikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2C4C161E128E66001110B4 /* ChorStatistikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChorStatistikUITests.swift; sourceTree = "<group>"; };
 		AA2C4C181E128E66001110B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2C4C2A1E12A92C001110B4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +101,13 @@
 		AA2C4BF01E128E65001110B4 /* ChorStatistik */ = {
 			isa = PBXGroup;
 			children = (
+				AA2C4C251E12A349001110B4 /* Data */,
+				AA2C4C241E12A31F001110B4 /* Controller */,
 				AA2C4BF11E128E65001110B4 /* AppDelegate.swift */,
-				AA2C4BF61E128E65001110B4 /* MasterViewController.swift */,
-				AA2C4BF81E128E65001110B4 /* DetailViewController.swift */,
 				AA2C4BFA1E128E65001110B4 /* Main.storyboard */,
 				AA2C4BFD1E128E65001110B4 /* Assets.xcassets */,
 				AA2C4BFF1E128E66001110B4 /* LaunchScreen.storyboard */,
 				AA2C4C021E128E66001110B4 /* Info.plist */,
-				AA2C4BF31E128E65001110B4 /* ChorStatistik.xcdatamodeld */,
 			);
 			path = ChorStatistik;
 			sourceTree = "<group>";
@@ -129,6 +128,23 @@
 				AA2C4C181E128E66001110B4 /* Info.plist */,
 			);
 			path = ChorStatistikUITests;
+			sourceTree = "<group>";
+		};
+		AA2C4C241E12A31F001110B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA2C4BF61E128E65001110B4 /* MasterViewController.swift */,
+				AA2C4BF81E128E65001110B4 /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AA2C4C251E12A349001110B4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA2C4C291E12A92C001110B4 /* ChorStatistik.xcdatamodeld */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2C4BF51E128E65001110B4 /* ChorStatistik.xcdatamodeld in Sources */,
 				AA2C4BF21E128E65001110B4 /* AppDelegate.swift in Sources */,
+				AA2C4C2B1E12A92C001110B4 /* ChorStatistik.xcdatamodeld in Sources */,
 				AA2C4BF71E128E65001110B4 /* MasterViewController.swift in Sources */,
 				AA2C4BF91E128E65001110B4 /* DetailViewController.swift in Sources */,
 			);
@@ -542,13 +558,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AA2C4BF31E128E65001110B4 /* ChorStatistik.xcdatamodeld */ = {
+		AA2C4C291E12A92C001110B4 /* ChorStatistik.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AA2C4BF41E128E65001110B4 /* ChorStatistik.xcdatamodel */,
+				AA2C4C2A1E12A92C001110B4 /* Model.xcdatamodel */,
 			);
-			currentVersion = AA2C4BF41E128E65001110B4 /* ChorStatistik.xcdatamodel */;
-			path = ChorStatistik.xcdatamodeld;
+			currentVersion = AA2C4C2A1E12A92C001110B4 /* Model.xcdatamodel */;
+			name = ChorStatistik.xcdatamodeld;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
